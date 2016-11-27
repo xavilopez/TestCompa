@@ -58,7 +58,7 @@ $(function() {
         colorCard='#F82758';
         break;
       }
-     htmlStr = '<div class="col-md-4 col-sm-6 col-xs-12 rowModal">'+
+     htmlStr = '<div class="col-md-4 col-sm-4 col-xs-4 rowModal">'+
                   '<div class="demo-card-square mdl-card mdl-shadow--2dp">'+
                     '<div class="card-title" style="background:'+ colorCard +'">'+
                     '<a href="https://www.amazon.com/Koffee-Kult-Highest-Delicious-Organically/dp/B00PV4FG3Q/ref=as_li_ss_il?_encoding=UTF8&refRID=G8D0HHZ19D7Z9HWZ18FV&th=1&linkCode=li2&tag=compa0ae-20&linkId=34cdabe1c62cd8d210b6c8e8380c18ae" target="_blank">'+
