@@ -197,7 +197,7 @@ $(function() {
             generateModal(priceProd,colorProd,nameProd,brandProd,imgProd,tasteProd,flavorProd,roastProd,originProd,typeProd,workProd,acidProd,cafeProd);
 
             var gridColor = $(contCard).find(".imgAmazon");
-            $(gridColor).addClass("imgAmazonAdd");
+            $(gridColor).toggleClass("imgAmazonAdd");
         });
 
    //check cards
