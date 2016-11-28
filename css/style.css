@@ -185,7 +185,7 @@
   height: 100%;
   text-align: center;
 }
-.imgAmazon img{
+.imgAmazon a img{
   height: 100%;
   width: auto;
 }
