@@ -184,7 +184,7 @@
   height: 100%;
   text-align: center;
 }
-.imgAmazon a img{
+.imgAmazon {
   height: 100%;
   width: auto;
   mix-blend-mode: multiply;
