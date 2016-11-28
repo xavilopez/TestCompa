@@ -182,6 +182,8 @@
 
 /*Amazon section*/
 .imgAmazon{
+  width: 100%;
+  height: 100%;
 }
 #divAmazon{
   height: 100%;

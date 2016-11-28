@@ -61,14 +61,25 @@ $(function() {
      htmlStr = '<div class="col-md-4 col-sm-6 col-xs-12 rowModal">'+
                   '<div class="demo-card-square mdl-card mdl-shadow--2dp">'+
                     '<div class="card-title" style="background:'+ colorCard +'">'+
-                    '<a href="https://www.amazon.com/Koffee-Kult-Highest-Delicious-Organically/dp/B00PV4FG3Q/ref=as_li_ss_il?_encoding=UTF8&refRID=G8D0HHZ19D7Z9HWZ18FV&th=1&linkCode=li2&tag=compa0ae-20&linkId=34cdabe1c62cd8d210b6c8e8380c18ae" target="_blank">'+
-                    '<img class="imgAmazon" border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00PV4FG3Q&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=compa0ae-2">'+
-                    /*'<div style="background-image:'+'//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00PV4FG3Q&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=compa0ae-2'+'" background-size:cover></div>'+*/
-                    '</a>'+
-                    '<img src="https://ir-na.amazon-adsystem.com/e/ir?t=compa0ae-20&l=li2&o=1&a=B00PV4FG3Q" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>'+
-                      '<h2 class="mdl-card__title-text" id="nameProd">'+ varCard[1] +'</h2>'+
+                      '<div class="imgAmazon">'+ varCard[10] +'</div>'+  /*IMAGE*/
                     '</div>'+
                     '<div class="mdl-card__supporting-text">'+
+                          '<div class="row impar">'+
+                            '<div class="col-md-6 col-sm-6 col-xs-6">'+
+                              '<div class="lblTaste"><strong>Name</strong></div>'+
+                            '</div>'+
+                            '<div class="col-md-6 col-sm-6 col-xs-6">'+
+                              '<a class="txtTaste" href="'+ varCard[1] +'">show price</a>'+ /*NAME*/
+                            '</div>'+
+                          '</div>'+
+                          '<div class="row impar">'+
+                            '<div class="col-md-6 col-sm-6 col-xs-6">'+
+                              '<div class="lblTaste"><strong>Brand</strong></div>'+
+                            '</div>'+
+                            '<div class="col-md-6 col-sm-6 col-xs-6">'+
+                              '<a class="txtTaste" href="'+ varCard[0] +'">show price</a>'+ /*BRAND*/
+                            '</div>'+
+                          '</div>'+
                           '<div class="row impar">'+
                               '<div class="col-md-6 col-sm-6 col-xs-6">'+
                                 '<div class="lblTaste"><strong>Price</strong></div>'+
