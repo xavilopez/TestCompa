@@ -151,16 +151,20 @@ body{
 .imgAmazon{
   height: 100%;
   text-align: center;
-
 }
 .imgAmazon a img{
   height: 100%;
   width: auto;
   mix-blend-mode: multiply;
+
 }
-.imgAmazon_hover{
+
+.imgAmazon:hover{
   /*background-color: rgba(255, 255, 255, 1);*/
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0) !important;
+}
+.imgAmazonAdd{
+  background-color: rgba(255,255,255,0) !important;
 }
 #divAmazon{
   height: 100%;

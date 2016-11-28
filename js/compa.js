@@ -178,6 +178,8 @@ $(function() {
 
             var contCard = $(this).parents('.col-md-4');
 
+
+
             var colorProd = $(contCard).find(".imgAmazon").css("background-color");
             var nameProd = $(contCard).find(".nameProd").text();
             var brandProd = $(contCard).find(".brandProd").text();
@@ -194,6 +196,8 @@ $(function() {
 
             generateModal(priceProd,colorProd,nameProd,brandProd,imgProd,tasteProd,flavorProd,roastProd,originProd,typeProd,workProd,acidProd,cafeProd);
 
+            var gridColor = $(contCard).find(".imgAmazon");
+            $(gridColor).addClass("imgAmazonAdd");
         });
 
    //check cards
@@ -366,9 +370,10 @@ jQuery.expr[':'].icontains = function(a, i, m) {
 
  /////////////////////
 //card-title hover
-$('.imgAmazon').hover(()=>{
+/*$('.imgAmazon').hover(()=>{
+  console.log("asd");
   $(this).toggleClass('imgAmazon_hover');
-});
+});*/
 
  //card-title hover
 /////////////////////
