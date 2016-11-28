@@ -71,26 +71,26 @@ $(function() {
                     '<div class="mdl-card__supporting-text">'+
                           '<div class="row impar">'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                              '<div class="lblTaste"><strong>Name</strong></div>'+
+                              '<div class="lblName"><strong>Name</strong></div>'+
                             '</div>'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                              '<div class="txtTaste">'+ varCard[1] +'</div>'+ /*NAME*/
+                              '<div class="nameProd">'+ varCard[1] +'</div>'+ /*NAME*/
                             '</div>'+
                           '</div>'+
                           '<div class="row par">'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                              '<div class="lblTaste"><strong>Brand</strong></div>'+
+                              '<div class="lblBrand"><strong>Brand</strong></div>'+
                             '</div>'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                              '<div class="txtTaste" >'+ varCard[0] +'</div>'+ /*BRAND*/
+                              '<div class="brandProd" >'+ varCard[0] +'</div>'+ /*BRAND*/
                             '</div>'+
                           '</div>'+
                           '<div class="row impar">'+
                               '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                                '<div class="lblTaste"><strong>Price</strong></div>'+
+                                '<div class="lblPrice"><strong>Price</strong></div>'+
                               '</div>'+
                               '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                                '<a class="txtTaste" href="'+ varCard[2] +'">show price</a>'+ /*PRICE*/
+                                '<a class="priceProd" href="'+ varCard[2] +'">show price</a>'+ /*PRICE*/
                               '</div>'+
                           '</div>'+
                           '<div class="row par">'+
@@ -98,7 +98,7 @@ $(function() {
                               '<div class="lblTaste"><strong>Taste</strong></div>'+
                             '</div>'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                              '<div class="txtTaste idbtn" id="tasteProd">'+ varCard[3] +'</div>'+ /*TASTE*/
+                              '<div class="tasteProd idbtn">'+ varCard[3] +'</div>'+ /*TASTE*/
                             '</div>'+
                           '</div>'+
                           '<div class="row impar">'+
@@ -106,7 +106,7 @@ $(function() {
                               '<div class="lblFlavor"><strong>Flavor</strong></div>'+
                             '</div>'+
                           '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                            '<div class="txtFlavor idbtn" id="flavorProd">'+ varCard[4] +'</div>'+ /*FLAVOR*/
+                            '<div class="flavorProd idbtn">'+ varCard[4] +'</div>'+ /*FLAVOR*/
                           '</div>'+
                         '</div>'+
                         '<div class="row par">'+
@@ -114,15 +114,15 @@ $(function() {
                       '<div class="lblRoast"><strong>Roast</strong></div>'+
                     '</div>'+
                     '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                      '<div class="txtRoast idbtn" id="roastProd">'+ varCard[5] +'</div>'+ /*ROAST*/
+                      '<div class="roastProd idbtn">'+ varCard[5] +'</div>'+ /*ROAST*/
                     '</div>'+
                   '</div>'+
                   '<div class="row impar">'+
                     '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                      '<div class="lblType"><strong>Origin</strong></div>'+
+                      '<div class="lblOrigin"><strong>Origin</strong></div>'+
                     '</div>'+
                     '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                      '<div class="txtType idbtn" id="originProd">'+ varCard[6] +'</div>'+ /*ORIGIN*/
+                      '<div class="originProd idbtn">'+ varCard[6] +'</div>'+ /*ORIGIN*/
                     '</div>'+
                   '</div>'+
                   '<div class="row par">'+
@@ -130,15 +130,15 @@ $(function() {
                       '<div class="lblType"><strong>Type</strong></div>'+
                     '</div>'+
                     '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                      '<div class="txtType idbtn" id="typeProd">'+ varCard[7] +'</div>'+ /*TYPE*/
+                      '<div class="typeProd idbtn">'+ varCard[7] +'</div>'+ /*TYPE*/
                     '</div>'+
                   '</div>'+
                   '<div class="row impar">'+
                     '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                      '<div class="lblType"><strong>Works with</strong></div>'+
+                      '<div class="lblWork"><strong>Works with</strong></div>'+
                     '</div>'+
                     '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                      '<div class="txtType idbtn" id="workProd">'+ varCard[8] +'</div>'+ /*WORKS WITH*/
+                      '<div class="workProd idbtn">'+ varCard[8] +'</div>'+ /*WORKS WITH*/
                     '</div>'+
                   '</div>'+
                   '<div class="row par">'+
@@ -146,7 +146,7 @@ $(function() {
                       '<div class="lblAdicity"><strong>Acidity</strong></div>'+
                     '</div>'+
                     '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                      '<div class="txtAdicity idbtn" id="acidProd">'+ varCard[9] +'</div>'+ /*ACIDITY*/
+                      '<div class="acidProd idbtn">'+ varCard[9] +'</div>'+ /*ACIDITY*/
                     '</div>'+
                   '</div>'+
                   '<div class="row impar">'+
@@ -154,7 +154,7 @@ $(function() {
                       '<div class="lblCafType"><strong>Caffeine Type</strong></div>'+
                     '</div>'+
                     '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                      '<div class="txtCafType idbtn" id="cafeProd">'+ varCard[11] +'</div>'+ /*CAFFEINE TYPE*/
+                      '<div class="cafeProd idbtn">'+ varCard[11] +'</div>'+ /*CAFFEINE TYPE*/
                     '</div>'+
                   '</div>'+
                   '</div>'+
@@ -178,32 +178,22 @@ $(function() {
 
             var contCard = $(this).parents('.col-md-4');
 
-            //falta color
-            var nameProd = $(contCard).find("#nameProd");
-            nameProd = $(nameProd).text();
-            var imgProd = $(contCard).find("#imgProd");
-            imgProd = $(imgProd).text();
-            //falta precio
-            var tasteProd = $(contCard).find("#tasteProd");
-            tasteProd = $(tasteProd).text();
-            var flavorProd = $(contCard).find("#flavorProd");
-            flavorProd = $(flavorProd).text()
-            var roastProd = $(contCard).find("#roastProd");
-            roastProd = $(roastProd).text()
-            var originProd = $(contCard).find("#originProd");
-            originProd = $(originProd).text()
-            var typeProd = $(contCard).find("#typeProd");
-            typeProd = $(typeProd).text()
-            var workProd = $(contCard).find("#workProd");
-            workProd = $(workProd).text()
-            var acidProd = $(contCard).find("#acidProd");
-            acidProd = $(acidProd).text()
-            var cafeProd = $(contCard).find("#cafeProd");
-            cafeProd = $(cafeProd).text()
-            //var brandProduct = $(contCard).find("#brandProduct");
-            //brandProduct = $(brandProduct).text()
+            var colorProd = $(contCard).find(".imgAmazon").css("background-color");
+            var nameProd = $(contCard).find(".nameProd").text();
+            var brandProd = $(contCard).find(".brandProd").text();
+            var imgProd = $(contCard).find(".imgAmazon").text();
+            console.log(imgProd);
+            var priceProd = $(contCard).find(".priceProd").attr('href');
+            var tasteProd = $(contCard).find(".tasteProd").text();
+            var flavorProd = $(contCard).find(".flavorProd").text();
+            var roastProd = $(contCard).find(".roastProd").text();
+            var originProd = $(contCard).find(".originProd").text();
+            var typeProd = $(contCard).find(".typeProd").text();
+            var workProd = $(contCard).find(".workProd").text();
+            var acidProd = $(contCard).find(".acidProd").text();
+            var cafeProd = $(contCard).find(".cafeProd").text();
 
-            generateModal(nameProd,imgProd,tasteProd,flavorProd,roastProd,originProd,typeProd,workProd,acidProd,cafeProd);
+            generateModal(priceProd,colorProd,nameProd,brandProd,imgProd,tasteProd,flavorProd,roastProd,originProd,typeProd,workProd,acidProd,cafeProd);
 
         });
 
@@ -214,19 +204,40 @@ $(function() {
    //generate modal
    //  generateModal(nameProd,imgProd,tasteProd,flavorProd,roastProd,originProd,typeProd,workProd,acidProd,cafeProd,brandProduct);
 
-      function generateModal(nameProd,imgProd,tasteProd,flavorProd,roastProd,originProd,typeProd,workProd,acidProd,cafeProd){
+      function generateModal(priceProd,colorProd,nameProd,brandProd,imgProd,tasteProd,flavorProd,roastProd,originProd,typeProd,workProd,acidProd,cafeProd){
           var htmToModal = '<div class="col-md-4 col-sm-6 col-xs-12 rowModal">'+
-                       '<div class="demo-card-square mdl-card mdl-shadow--2dp">'+
-                         '<div class="card-title" style="background:'+ colorCard +'">'+
-                           '<h2 class="mdl-card__title-text">'+ nameProd +'</h2>'+
-                         '</div>'+
+                       '<div class="demo-card-square mdl-card mdl-shadow--2dp" style="border:5px solid '+ colorProd +'">'+
+                         '<div class="card-title">'+
+                           '<div class="imgAmazon" style="background-color:'+ colorProd +'">'+ imgProd +'</div>'+  /*IMAGE*/
+                             '<div class="checkDiv">'+
+                               '<button class="mdl-button mdl-js-button mdl-button--icon btnAddCompa">'+
+                                 '<i class="material-icons">done</i>'+
+                               '</button>'+
+                             '</div>'+
+                           '</div>'+
                          '<div class="mdl-card__supporting-text">'+
                                '<div class="row impar">'+
+                                 '<div class="col-md-6 col-sm-6 col-xs-6">'+
+                                   '<div class="lblName"><strong>Name</strong></div>'+
+                                 '</div>'+
+                                 '<div class="col-md-6 col-sm-6 col-xs-6">'+
+                                   '<div class="nameProd">'+ nameProd +'</div>'+ /*NAME*/
+                                 '</div>'+
+                               '</div>'+
+                               '<div class="row par">'+
+                                 '<div class="col-md-6 col-sm-6 col-xs-6">'+
+                                   '<div class="lblBrand"><strong>Brand</strong></div>'+
+                                 '</div>'+
+                                 '<div class="col-md-6 col-sm-6 col-xs-6">'+
+                                   '<div class="brandProd" >'+ brandProd +'</div>'+ /*BRAND*/
+                                 '</div>'+
+                               '</div>'+
+                               '<div class="row impar">'+
                                    '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                                     '<div class="lblTaste"><strong>Price</strong></div>'+
+                                     '<div class="lblPrice"><strong>Price</strong></div>'+
                                    '</div>'+
                                    '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                                     '<a class="txtTaste" href="#">show price</a>'+ /*PRICE*/
+                                     '<a class="priceProd" href="'+ priceProd +'">show price</a>'+ /*PRICE*/
                                    '</div>'+
                                '</div>'+
                                '<div class="row par">'+
@@ -234,7 +245,7 @@ $(function() {
                                    '<div class="lblTaste"><strong>Taste</strong></div>'+
                                  '</div>'+
                                  '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                                   '<div class="txtTaste idbtn" id="tasteProd">'+ tasteProd +'</div>'+ /*TASTE*/
+                                   '<div class="tasteProd idbtn">'+ tasteProd +'</div>'+ /*TASTE*/
                                  '</div>'+
                                '</div>'+
                                '<div class="row impar">'+
@@ -242,7 +253,7 @@ $(function() {
                                    '<div class="lblFlavor"><strong>Flavor</strong></div>'+
                                  '</div>'+
                                '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                                 '<div class="txtFlavor idbtn" id="flavorProd">'+ flavorProd +'</div>'+ /*FLAVOR*/
+                                 '<div class="flavorProd idbtn">'+ flavorProd +'</div>'+ /*FLAVOR*/
                                '</div>'+
                              '</div>'+
                              '<div class="row par">'+
@@ -250,15 +261,15 @@ $(function() {
                            '<div class="lblRoast"><strong>Roast</strong></div>'+
                          '</div>'+
                          '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                           '<div class="txtRoast idbtn" id="roastProd">'+ roastProd +'</div>'+ /*ROAST*/
+                           '<div class="roastProd idbtn">'+ roastProd +'</div>'+ /*ROAST*/
                          '</div>'+
                        '</div>'+
                        '<div class="row impar">'+
                          '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                           '<div class="lblType"><strong>Origin</strong></div>'+
+                           '<div class="lblOrigin"><strong>Origin</strong></div>'+
                          '</div>'+
                          '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                           '<div class="txtType idbtn" id="originProd">'+ originProd +'</div>'+ /*ORIGIN*/
+                           '<div class="originProd idbtn">'+ originProd +'</div>'+ /*ORIGIN*/
                          '</div>'+
                        '</div>'+
                        '<div class="row par">'+
@@ -266,15 +277,15 @@ $(function() {
                            '<div class="lblType"><strong>Type</strong></div>'+
                          '</div>'+
                          '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                           '<div class="txtType idbtn" id="typeProd">'+ typeProd +'</div>'+ /*TYPE*/
+                           '<div class="typeProd idbtn">'+ typeProd +'</div>'+ /*TYPE*/
                          '</div>'+
                        '</div>'+
                        '<div class="row impar">'+
                          '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                           '<div class="lblType"><strong>Works with</strong></div>'+
+                           '<div class="lblWork"><strong>Works with</strong></div>'+
                          '</div>'+
                          '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                           '<div class="txtType idbtn" id="workProd">'+ workProd +'</div>'+ /*WORKS WITH*/
+                           '<div class="workProd idbtn">'+ workProd +'</div>'+ /*WORKS WITH*/
                          '</div>'+
                        '</div>'+
                        '<div class="row par">'+
@@ -282,7 +293,7 @@ $(function() {
                            '<div class="lblAdicity"><strong>Acidity</strong></div>'+
                          '</div>'+
                          '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                           '<div class="txtAdicity idbtn" id="acidProd">'+ acidProd +'</div>'+ /*ACIDITY*/
+                           '<div class="acidProd idbtn">'+ acidProd +'</div>'+ /*ACIDITY*/
                          '</div>'+
                        '</div>'+
                        '<div class="row impar">'+
@@ -290,13 +301,10 @@ $(function() {
                            '<div class="lblCafType"><strong>Caffeine Type</strong></div>'+
                          '</div>'+
                          '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                           '<div class="txtCafType idbtn" id="cafeProd">'+ cafeProd +'</div>'+ /*CAFFEINE TYPE*/
+                           '<div class="cafeProd idbtn">'+ cafeProd +'</div>'+ /*CAFFEINE TYPE*/
                          '</div>'+
                        '</div>'+
                        '</div>'+
-                       '<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="background:'+ colorCard +'" id="btnAddCompa">'+
-                       '  Add to Compa'+
-                       '</a>'+
                      '</div>'+
                    '</div>';
 
