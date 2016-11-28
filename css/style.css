@@ -87,13 +87,24 @@
 
 /*grid section*/
 
+.checkDiv{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.checkDivOn{
+  background-color: red;
+}
+
 .demo-card-square.mdl-card {
   width: 23rem;
   height: 30rem;
 }
 .demo-card-square > .card-title {
   color: #fff;
-  height: 200px;
+  min-height: 17rem;
 }
 .card-title > .mdl-card__title-text{
 
@@ -114,37 +125,6 @@
 }
 .mdl-button{
   opacity: .8;
-}
-
-#tile1{
-  background-color: #7fc41b;
-  flex-direction: row;
-  align-items: flex-end;
-}
-#tile2{
-  background-color: #d77e00;
-  flex-direction: row;
-  align-items: flex-end;
-}
-#tile3{
-  background-color: #E1E576;
-  flex-direction: row;
-  align-items: flex-end;
-}
-#tile4{
-  background-color: #e0161e;
-  flex-direction: row;
-  align-items: flex-end;
-}
-#tile5{
-  background-color: #14950F;
-  flex-direction: row;
-  align-items: flex-end;
-}
-#tile6{
-  background-color: #900F95;
-  flex-direction: row;
-  align-items: flex-end;
 }
 .mdl-card__title{
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
@@ -183,13 +163,17 @@
 .imgAmazon{
   height: 100%;
   text-align: center;
+
 }
-.imgAmazon {
+.imgAmazon a img{
   height: 100%;
   width: auto;
   mix-blend-mode: multiply;
 }
+.imgAmazon_hover{
+  /*background-color: rgba(255, 255, 255, 1);*/
+  background-color: #ffffff;
+}
 #divAmazon{
   height: 100%;
-
 }

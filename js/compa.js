@@ -22,47 +22,52 @@ $(function() {
      numRandom = getRandomIntInclusive(0,11);
      switch(numRandom) {
       case 0:
-        colorCard='#B2868E';
+        colorCard='rgba(224,49,25,0.7)';
         break;
       case 1:
-        colorCard='#590059';
+        colorCard='rgba(0,62,119,0.7)';
         break;
       case 2:
-        colorCard='#58402d';
+        colorCard='rgba(119,57,0,0.7)';
         break;
       case 3:
-        colorCard='#6e329b';
+        colorCard='rgba(196,94,0,0.7)';
         break;
       case 4:
-        colorCard='#00007f';
+        colorCard='rgba(0,196,94,0.7)';
         break;
       case 5:
-        colorCard='#7F7FFF';
+        colorCard='rgba(196,0,102,0.7)';
         break;
       case 6:
-        colorCard='#94C42F';
+        colorCard='rgba(230,246,55,0.7)';
         break;
       case 7:
-        colorCard='#007F7F';
+        colorCard='rgba(246,167,55,0.7)';
         break;
       case 8:
-        colorCard='Green';
+        colorCard='rgba(55,246,167,0.7)';
         break;
       case 9:
-        colorCard='#004C00';
+        colorCard='rgba(167,55,246,0.7)';
         break;
       case 10:
-        colorCard='#999900';
+        colorCard='rgba(93,172,38,0.7)';
         break;
       case 11:
-        colorCard='#F82758';
+        colorCard='rgba(160,172,38,0.7)';
         break;
       }
      htmlStr = '<div class="col-md-4 col-sm-6 col-xs-12 rowModal">'+
-                  '<div class="demo-card-square mdl-card mdl-shadow--2dp">'+
+                  '<div class="demo-card-square mdl-card mdl-shadow--2dp" style="border:5px solid '+ colorCard +'">'+
                     '<div class="card-title">'+
-                      '<div class="imgAmazon" style="background-color:rgba(224,49,25,0.7)">'+ varCard[10] +'</div>'+  /*IMAGE*/
-                    '</div>'+
+                      '<div class="imgAmazon" style="background-color:'+ colorCard +'">'+ varCard[10] +'</div>'+  /*IMAGE*/
+                        '<div class="checkDiv">'+
+                          '<button class="mdl-button mdl-js-button mdl-button--icon btnAddCompa">'+
+                            '<i class="material-icons">done</i>'+
+                          '</button>'+
+                        '</div>'+
+                      '</div>'+
                     '<div class="mdl-card__supporting-text">'+
                           '<div class="row impar">'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
@@ -153,9 +158,6 @@ $(function() {
                     '</div>'+
                   '</div>'+
                   '</div>'+
-                  '<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="background:'+ colorCard +'" id="btnAddCompa">'+
-                  '  Add to Compa'+
-                  '</a>'+
                 '</div>'+
               '</div>';
 
@@ -170,7 +172,9 @@ $(function() {
 
     ///////////////////
    //check cards
-        $('#btnAddCompa').click(function (){
+        $('.btnAddCompa').click(function (){
+
+            $(this).parent('.checkDiv').toggleClass('checkDivOn');
 
             var contCard = $(this).parents('.col-md-4');
 
@@ -353,7 +357,14 @@ jQuery.expr[':'].icontains = function(a, i, m) {
  //new contains function
 /////////////////////////
 
+ /////////////////////
+//card-title hover
+$('.imgAmazon').hover(()=>{
+  $(this).toggleClass('imgAmazon_hover');
+});
 
+ //card-title hover
+/////////////////////
 
 
 
