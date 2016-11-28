@@ -181,8 +181,7 @@ $(function() {
             var colorProd = $(contCard).find(".imgAmazon").css("background-color");
             var nameProd = $(contCard).find(".nameProd").text();
             var brandProd = $(contCard).find(".brandProd").text();
-            var imgProd = $(contCard).find(".imgAmazon").text();
-            console.log(imgProd);
+            var imgProd = $(contCard).find(".imgAmazon").html();
             var priceProd = $(contCard).find(".priceProd").attr('href');
             var tasteProd = $(contCard).find(".tasteProd").text();
             var flavorProd = $(contCard).find(".flavorProd").text();
