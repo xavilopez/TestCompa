@@ -93,7 +93,6 @@
 }
 .demo-card-square > .card-title {
   color: #fff;
-  background:#46B6AC;
   height: 200px;
 }
 .card-title > .mdl-card__title-text{
@@ -188,6 +187,7 @@
 .imgAmazon a img{
   height: 100%;
   width: auto;
+  mix-blend-mode: multiply;
 }
 #divAmazon{
   height: 100%;

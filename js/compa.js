@@ -61,7 +61,7 @@ $(function() {
      htmlStr = '<div class="col-md-4 col-sm-6 col-xs-12 rowModal">'+
                   '<div class="demo-card-square mdl-card mdl-shadow--2dp">'+
                     '<div class="card-title">'+
-                      '<div class="imgAmazon" style="background-color:rgba(155,34,17,0.5)">'+ varCard[10] +'</div>'+  /*IMAGE*/
+                      '<div class="imgAmazon" style="background-color:rgba(224,49,25,0.7)">'+ varCard[10] +'</div>'+  /*IMAGE*/
                     '</div>'+
                     '<div class="mdl-card__supporting-text">'+
                           '<div class="row impar">'+
