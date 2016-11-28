@@ -69,15 +69,15 @@ $(function() {
                               '<div class="lblTaste"><strong>Name</strong></div>'+
                             '</div>'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                              '<a class="txtTaste" href="'+ varCard[1] +'">show price</a>'+ /*NAME*/
+                              '<a class="txtTaste">'+ varCard[1] +'</a>'+ /*NAME*/
                             '</div>'+
                           '</div>'+
-                          '<div class="row impar">'+
+                          '<div class="row par">'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
                               '<div class="lblTaste"><strong>Brand</strong></div>'+
                             '</div>'+
                             '<div class="col-md-6 col-sm-6 col-xs-6">'+
-                              '<a class="txtTaste" href="'+ varCard[0] +'">show price</a>'+ /*BRAND*/
+                              '<a class="txtTaste" >'+ varCard[0] +'</a>'+ /*BRAND*/
                             '</div>'+
                           '</div>'+
                           '<div class="row impar">'+
